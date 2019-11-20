@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "#X#",
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "X": {
+       "item": "bedrockium:bedrockium"
+    }
+  },
+  "result": {
+    "item": "bedrockium:stick",
+    "count": 4
+  }
+}
