@@ -25,7 +25,7 @@ credits="Java, Jetbrains, Minecraft Forge" #optional
 authors="pizzaatime(Qelifern)" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Bedrockium adds tools bedrock tools to the game, change between enchants on the go while mining, digging or chopping!
+Bedrockium adds tools bedrock tools to the game, change between enchants on the go, while mining, digging or chopping!
 
 You cannot enchant a bedrock tool, a bedrock tool gets enchanted when crafted.
 
