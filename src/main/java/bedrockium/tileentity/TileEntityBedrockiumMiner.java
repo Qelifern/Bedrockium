@@ -90,15 +90,17 @@ public class TileEntityBedrockiumMiner extends TileEntityInventory implements IT
                 }
             }
             if (this.timer % 10 == 0) {
-                if (this.getEnergy() >= this.powerUsage && this.getStackInSlot(2).isEmpty() || (!this.getStackInSlot(2).isEmpty() && this.getStackInSlot(2).getCount() < 64)) {
-                    if (this.getStackInSlot(0).getDamage() <= 999) {
-                        if (!this.getStackInSlot(0).isEmpty()) {
-                            if (this.getStackInSlot(0).getDamage() >= 1)
-                                this.getStackInSlot(0).setDamage(this.getStackInSlot(0).getDamage() + 1);
-                            if (this.getStackInSlot(0).getDamage() > 200) {
-                                if (!this.getStackInSlot(3).isEmpty()) {
-                                    this.getStackInSlot(0).setDamage(this.getStackInSlot(0).getDamage() - 200);
-                                    this.getStackInSlot(3).shrink(1);
+                if (world.getBlockState(pos.down()).getBlock() == Blocks.BEDROCK) {
+                    if (this.getEnergy() >= this.powerUsage && this.getStackInSlot(2).isEmpty() || (!this.getStackInSlot(2).isEmpty() && this.getStackInSlot(2).getCount() < 64)) {
+                        if (this.getStackInSlot(0).getDamage() <= 999) {
+                            if (!this.getStackInSlot(0).isEmpty()) {
+                                if (this.getStackInSlot(0).getDamage() >= 1)
+                                    this.getStackInSlot(0).setDamage(this.getStackInSlot(0).getDamage() + 1);
+                                if (this.getStackInSlot(0).getDamage() > 200) {
+                                    if (!this.getStackInSlot(3).isEmpty()) {
+                                        this.getStackInSlot(0).setDamage(this.getStackInSlot(0).getDamage() - 200);
+                                        this.getStackInSlot(3).shrink(1);
+                                    }
                                 }
                             }
                         }
@@ -232,5 +234,7 @@ public class TileEntityBedrockiumMiner extends TileEntityInventory implements IT
         }
         return super.getCapability(capability, facing);
     }
+
+
 
 }

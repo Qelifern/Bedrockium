@@ -9,6 +9,8 @@ import bedrockium.proxy.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -39,6 +41,13 @@ public class Main
         Config.loadConfig();
 
     }
+
+    public static ItemGroup itemGroup = new ItemGroup(Main.MOD_ID) {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModBlocks.miner);
+        }
+    };
 
     @SubscribeEvent
     public static void config(ConfigChangedEvent.OnConfigChangedEvent event) {

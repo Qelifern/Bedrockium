@@ -11,5 +11,12 @@
     "block.bedrockium.miner": "Bedrockium Miner",
 
     "_comment": "Container",
-    "container.miner": "Miner"
+    "container.miner": "Miner",
+
+    "_comment": "Container",
+    "miner_recipes": "Bedrockium Mining",
+
+
+    "_comment": "TAB",
+    "itemGroup.bedrockium": "Bedrockium"
 }
