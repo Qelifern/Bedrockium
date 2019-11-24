@@ -1,11 +1,15 @@
 package bedrockium;
 
 import bedrockium.config.Config;
+import bedrockium.init.ModBlocks;
 import bedrockium.init.ModItems;
 import bedrockium.proxy.ClientProxy;
 import bedrockium.proxy.IProxy;
 import bedrockium.proxy.ServerProxy;
+import net.minecraft.block.Block;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -59,6 +63,21 @@ public class Main
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         ModItems.register(event.getRegistry());
+    }
+
+    @SubscribeEvent
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        ModBlocks.register(event.getRegistry());
+    }
+
+    @SubscribeEvent
+    public static void registerTiles(RegistryEvent.Register<TileEntityType<?>> event) {
+        ModBlocks.registerTiles(event.getRegistry());
+    }
+
+    @SubscribeEvent
+    public static void registerContainers(RegistryEvent.Register<ContainerType<?>> event) {
+        ModBlocks.registerContainers(event.getRegistry());
     }
 
 }

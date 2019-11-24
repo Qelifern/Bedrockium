@@ -47,10 +47,17 @@ public class Config {
     }
 
     public static class Server {
+        public final ForgeConfigSpec.IntValue minerMaxProgress;
+        public final ForgeConfigSpec.IntValue minerPowerUsage;
 
         Server(ForgeConfigSpec.Builder builder) {
             builder.comment("Server configuration settings")
                     .push("server");
+            minerMaxProgress = builder
+                    .comment(" Lower value means faster mining (ticks). Default: 12000. Range: 2-72000 (MUST BE WITHIN RANGE)").defineInRange("miner_max_progress", 12000, 2, 72000);
+
+            minerPowerUsage = builder
+                    .comment(" Amount of power (FE) to use while mining. Default: 80. Range: 0-1000000 (MUST BE WITHIN RANGE)").defineInRange("miner_power_usage", 80, 0, 1000000);
 
             builder.pop();
         }

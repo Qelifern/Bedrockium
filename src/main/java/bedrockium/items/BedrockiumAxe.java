@@ -35,7 +35,7 @@ public class BedrockiumAxe extends AxeItem {
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if (Config.CLIENT.displayInformationOnTools.get()) {
-            tooltip.add(new StringTextComponent("Right-click to switch between enchantments\nChopping gives the user haste\nYou can choose not to show this information in the config, \nor by sneak+right-clicking on a workbench"));
+            tooltip.add(new StringTextComponent("Right-click to switch between enchantments\nChopping gives the user haste\nYou can choose not to show this information in the config, \nor by sneak+right-clicking on a workbench with any bedrockium tool"));
         } else {
             return;
         }

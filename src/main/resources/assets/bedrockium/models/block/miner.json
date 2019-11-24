@@ -1,0 +1,175 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "miner_purple": "bedrockium:blocks/miner_purple",
+        "miner_dark": "bedrockium:blocks/miner_dark",
+        "particle": "bedrockium:blocks/miner_dark"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Pillar1",
+            "from": [ 0, 0, 0 ],
+            "to": [ 3, 14, 3 ],
+            "faces": {
+                "north": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "east": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "south": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "west": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "up": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] },
+                "down": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Pillar2",
+            "from": [ 13, 0, 0 ],
+            "to": [ 16, 14, 3 ],
+            "faces": {
+                "north": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "east": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "south": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "west": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "up": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] },
+                "down": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Pillar3",
+            "from": [ 13, 0, 13 ],
+            "to": [ 16, 14, 16 ],
+            "faces": {
+                "north": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "east": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "south": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "west": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "up": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] },
+                "down": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Pillar4",
+            "from": [ 0, 0, 13 ],
+            "to": [ 3, 14, 16 ],
+            "faces": {
+                "north": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "east": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "south": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "west": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 14 ] },
+                "up": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] },
+                "down": { "texture": "#miner_purple", "uv": [ 0, 0, 3, 3 ] }
+            }
+        },
+        {
+            "name": "Line1",
+            "from": [ 3, 10, 13 ],
+            "to": [ 13, 12, 15 ],
+            "faces": {
+                "north": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "south": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] }
+            }
+        },
+        {
+            "name": "Line2",
+            "from": [ 3, 10, 1 ],
+            "to": [ 13, 12, 3 ],
+            "faces": {
+                "north": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "south": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] }
+            }
+        },
+        {
+            "name": "Line3",
+            "from": [ 1, 10, 3 ],
+            "to": [ 3, 12, 13 ],
+            "faces": {
+                "east": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "west": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 10 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 10 ] }
+            }
+        },
+        {
+            "name": "Line4",
+            "from": [ 13, 10, 3 ],
+            "to": [ 15, 12, 13 ],
+            "faces": {
+                "east": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "west": { "texture": "#miner_dark", "uv": [ 0, 0, 10, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 10 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 10 ] }
+            }
+        },
+        {
+            "name": "Line5",
+            "from": [ 7, 12, 1 ],
+            "to": [ 9, 14, 15 ],
+            "faces": {
+                "north": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 2 ] },
+                "east": { "texture": "#miner_dark", "uv": [ 0, 0, 14, 2 ] },
+                "south": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 2 ] },
+                "west": { "texture": "#miner_dark", "uv": [ 0, 0, 14, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 14 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 14 ] }
+            }
+        },
+        {
+            "name": "Line6",
+            "from": [ 9, 12, 7 ],
+            "to": [ 15, 14, 9 ],
+            "faces": {
+                "north": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "east": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 2 ] },
+                "south": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] }
+            }
+        },
+        {
+            "name": "Line7",
+            "from": [ 1, 12, 7 ],
+            "to": [ 7, 14, 9 ],
+            "faces": {
+                "north": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "south": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "west": { "texture": "#miner_dark", "uv": [ 0, 0, 2, 2 ] },
+                "up": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] },
+                "down": { "texture": "#miner_dark", "uv": [ 0, 0, 6, 2 ] }
+            }
+        }
+    ]
+}

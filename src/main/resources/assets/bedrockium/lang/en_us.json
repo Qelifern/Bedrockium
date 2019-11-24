@@ -4,5 +4,12 @@
     "item.bedrockium.stick": "Bedrockium Stick",
     "item.bedrockium.pick": "Bedrockium Pickaxe",
     "item.bedrockium.spade": "Bedrockium Shovel",
-    "item.bedrockium.axe": "Bedrockium Axe"
+    "item.bedrockium.axe": "Bedrockium Axe",
+    "item.bedrockium.drill_head": "Diamond Drill Head",
+
+    "_comment": "Blocks",
+    "block.bedrockium.miner": "Bedrockium Miner",
+
+    "_comment": "Container",
+    "container.miner": "Miner"
 }
